@@ -40,12 +40,12 @@ def hangman():
             guess_word_letters.remove(guessed_letter)     #remove it from remaining guess letters
 
             if len(guess_word_letters) == 0:
-                print("you won fucker. The word was,", guess_word)
+                print("you won! The word was,", guess_word)
                 exit()
         else:
             lives -= 1
             if lives == 0:
-                print("game over, dude. The word was,", guess_word)
+                print("game over!. The word was,", guess_word)
                 exit()
 
         user_guesses.add(guessed_letter)
